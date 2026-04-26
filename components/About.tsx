@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Brain, Compass, GitBranch, Users } from "lucide-react";
 
 const pillars = [
@@ -33,6 +34,19 @@ export function About() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-5">
+            <div className="relative mb-8 flex justify-center lg:justify-start">
+              <div className="absolute -top-12 -left-12 h-48 w-48 rounded-full bg-accent/20 blur-3xl opacity-60" />
+              <div className="relative overflow-hidden rounded-full border border-white/[0.07] bg-gradient-to-br from-white/[0.03] to-white/[0.01] p-2 w-[240px] h-[240px] lg:w-[320px] lg:h-[320px]">
+                <Image
+                  src="/headshot-transparent.png"
+                  alt="Idris Gagan"
+                  width={1080}
+                  height={1080}
+                  priority
+                  className="rounded-full w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <span className="kicker">About — 01</span>
             <h2 className="mt-5 font-display tracking-tightest text-[clamp(2rem,4vw,3.4rem)] leading-[1.02] text-white">
               Twenty years of shipping the{" "}

@@ -47,7 +47,7 @@ export function Nav() {
               IG
               <span className="absolute inset-0 rounded-md ring-1 ring-white/20" />
             </span>
-            <div className="hidden sm:flex flex-col leading-none">
+            <div className="hidden sm:flex flex-col leading-none gap-1.5">
               <span className="text-[13px] font-semibold tracking-tight text-white">
                 Idris Gagan
               </span>
