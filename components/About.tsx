@@ -36,7 +36,7 @@ export function About() {
           <div className="lg:col-span-5">
             <div className="relative mb-8 flex justify-center lg:justify-start">
               <div className="absolute -top-12 -left-12 h-48 w-48 rounded-full bg-accent/20 blur-3xl opacity-60" />
-              <div className="relative overflow-hidden rounded-full border border-white/[0.07] bg-gradient-to-br from-white/[0.03] to-white/[0.01] p-2 w-[240px] h-[240px] lg:w-[320px] lg:h-[320px]">
+              <div className="relative overflow-hidden rounded-full border border-white/[0.07] bg-gradient-to-br from-white/[0.03] to-white/[0.01] p-2 w-[168px] h-[168px] lg:w-[224px] lg:h-[224px]">
                 <Image
                   src="/headshot-transparent.png"
                   alt="Idris Gagan"
