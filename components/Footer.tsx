@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Linkedin, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -36,10 +36,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+17132948475"
+                  href="https://linkedin.com/in/idrisgagan"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-ink-100 hover:text-accent-glow transition-colors"
                 >
-                  <Phone className="h-4 w-4" /> (713) 294-8475
+                  <Linkedin className="h-4 w-4" /> linkedin.com/in/idrisgagan
                 </a>
               </li>
               <li className="inline-flex items-center gap-2 text-ink-300">

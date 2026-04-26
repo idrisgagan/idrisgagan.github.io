@@ -11,7 +11,7 @@ type Role = {
 const roles: Role[] = [
   {
     company: "Velostics Inc.",
-    title: "Head of Product & Customer Success (Player-Coach)",
+    title: "Head of Product & Customer Success",
     period: "Apr 2020 — Present",
     location: "Houston, TX",
     scope:

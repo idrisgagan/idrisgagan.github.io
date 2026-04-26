@@ -1,4 +1,4 @@
-import { Mail, Phone, ArrowUpRight, MapPin } from "lucide-react";
+import { Mail, Linkedin, ArrowUpRight, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -34,9 +34,14 @@ export function Contact() {
                   <Mail className="h-4 w-4" />
                   idris.gagan@gmail.com
                 </a>
-                <a href="tel:+17132948475" className="btn-ghost group">
-                  <Phone className="h-4 w-4" />
-                  (713) 294-8475
+                <a
+                  href="https://linkedin.com/in/idrisgagan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-ghost group"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
                   <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </a>
               </div>

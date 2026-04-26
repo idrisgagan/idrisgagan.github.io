@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Download, Sparkles } from "lucide-react";
 
 const stack = [
   "OpenAI",
@@ -34,7 +34,7 @@ export function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-signal-lime" />
             </span>
             <span className="text-ink-200">
-              Open to senior AI product management roles · Enterprise SaaS
+              Open to senior product management and Founding AI PM roles · Enterprise SaaS / AI-native
             </span>
           </div>
         </div>
@@ -77,6 +77,14 @@ export function Hero() {
               Get in touch
               <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
+            <a
+              href="/Idris_Gagan_AI_PM.pdf"
+              download
+              className="btn-ghost group"
+            >
+              <Download className="h-4 w-4 group-hover:translate-y-0.5 transition-transform" />
+              Download resume
+            </a>
           </div>
         </div>
 
@@ -87,7 +95,7 @@ export function Hero() {
           {[
             { v: "20+", l: "Years in product" },
             { v: "$1M+", l: "ARR commercialized solo" },
-            { v: "232", l: "Companies interviewed" },
+            { v: "~$5M", l: "Revenue unlocked" },
             { v: "0%", l: "Customer churn · 2 years" },
           ].map((m, i) => (
             <div

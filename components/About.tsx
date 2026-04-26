@@ -51,8 +51,9 @@ export function About() {
             <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-ink-300">
               Today I'm a hands-on builder of AI products — shipping LLM, RAG,
               and multi-agent workflows in production with OpenAI, Anthropic,
-              Gemini, MCP, Ollama, and n8n. Recognized by Chevron program
-              leadership as running the{" "}
+              Gemini, MCP, Ollama, and n8n. I hold an{" "}
+              <span className="text-white">MBA from UIUC (2022)</span> and have
+              been recognized by Chevron program leadership as running the{" "}
               <span className="text-white">best-performing team</span> on their
               D2D program after a 1-week process turnaround.
             </p>

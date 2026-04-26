@@ -1,20 +1,6 @@
-import { Lock, ArrowUpRight } from "lucide-react";
+import { Lock, ArrowUpRight, Mail } from "lucide-react";
 
 const teasers = [
-  {
-    title: "Velostics — AI Voice Scheduling",
-    summary:
-      "OpenAI + Gemini powered voice agent that books appointments without a human in the loop.",
-    tag: "Coming soon",
-    accent: "from-accent/30 to-signal-cyan/20",
-  },
-  {
-    title: "Autonomous GTM Agent",
-    summary:
-      "Multi-agent pipeline (MCP + Ollama + DeepSeek) for AI-driven lead generation and nurturing.",
-    tag: "Case study",
-    accent: "from-signal-cyan/30 to-accent/20",
-  },
   {
     title: "FileViewer — $1M+/yr commercialization",
     summary:
@@ -23,11 +9,11 @@ const teasers = [
     accent: "from-signal-amber/30 to-accent/20",
   },
   {
-    title: "Chevron DFSM Turnaround",
+    title: "Velostics — AI Voice Scheduling",
     summary:
-      "How a 1-week WSM-rotation discovery unblocked $150K/mo in digital ticket approvals.",
-    tag: "Case study",
-    accent: "from-accent/30 to-signal-lime/20",
+      "OpenAI + Gemini powered voice agent that books appointments without a human in the loop.",
+    tag: "Coming soon",
+    accent: "from-accent/30 to-signal-cyan/20",
   },
 ];
 
@@ -58,14 +44,14 @@ export function Portfolio() {
           </a>
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-4 md:grid-cols-3">
           {teasers.map((t, i) => (
             <div
               key={t.title}
-              className="lift group relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.02] p-6"
+              className="lift group relative overflow-hidden rounded-3xl border border-white/[0.07] bg-white/[0.02] p-7"
             >
               <div
-                className={`absolute -top-24 -right-24 h-48 w-48 rounded-full bg-gradient-to-br ${t.accent} blur-3xl opacity-50 group-hover:opacity-80 transition-opacity`}
+                className={`absolute -top-24 -right-24 h-56 w-56 rounded-full bg-gradient-to-br ${t.accent} blur-3xl opacity-50 group-hover:opacity-80 transition-opacity`}
               />
               <div className="relative">
                 <div className="flex items-center justify-between">
@@ -77,10 +63,10 @@ export function Portfolio() {
                     0{i + 1}
                   </span>
                 </div>
-                <h3 className="mt-6 text-[16px] font-semibold leading-snug text-white">
+                <h3 className="mt-6 text-[17px] font-semibold leading-snug text-white">
                   {t.title}
                 </h3>
-                <p className="mt-3 text-[13.5px] leading-relaxed text-ink-300">
+                <p className="mt-3 text-[14px] leading-relaxed text-ink-300">
                   {t.summary}
                 </p>
                 <div className="mt-6 flex items-center gap-1.5 text-[12px] text-ink-400">
@@ -90,6 +76,30 @@ export function Portfolio() {
               </div>
             </div>
           ))}
+
+          {/* "More on request" CTA tile */}
+          <a
+            href="mailto:idris.gagan@gmail.com?subject=Case%20study%20walkthrough"
+            className="lift group relative overflow-hidden rounded-3xl border border-accent/30 bg-gradient-to-br from-accent/15 via-accent/[0.06] to-transparent p-7 flex flex-col justify-between"
+          >
+            <div className="absolute -bottom-24 -right-24 h-56 w-56 rounded-full bg-accent/30 blur-3xl opacity-60 group-hover:opacity-90 transition-opacity" />
+            <div className="relative">
+              <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[10px] font-mono uppercase tracking-[0.2em] text-white/90 bg-accent/20 border border-accent/40">
+                <Mail className="h-3 w-3" />
+                On request
+              </span>
+              <h3 className="mt-6 text-[17px] font-semibold leading-snug text-white">
+                More case studies available — happy to walk you through any of them live.
+              </h3>
+              <p className="mt-3 text-[14px] leading-relaxed text-ink-200">
+                Chevron DFSM turnaround, autonomous GTM agent, Phillips 66 deployment, and more — written up privately for serious conversations.
+              </p>
+            </div>
+            <div className="relative mt-8 inline-flex items-center gap-2 text-[14px] font-medium text-white">
+              Email me for the walkthrough
+              <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </div>
+          </a>
         </div>
       </div>
     </section>
