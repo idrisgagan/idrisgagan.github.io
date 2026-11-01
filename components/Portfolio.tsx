@@ -79,7 +79,9 @@ export function Portfolio() {
 
           {/* "More on request" CTA tile */}
           <a
-            href="mailto:idris.gagan@gmail.com?subject=Case%20study%20walkthrough"
+            href="https://linkedin.com/in/idrisgagan"
+            target="_blank"
+            rel="noopener noreferrer"
             className="lift group relative overflow-hidden rounded-3xl border border-accent/30 bg-gradient-to-br from-accent/15 via-accent/[0.06] to-transparent p-7 flex flex-col justify-between"
           >
             <div className="absolute -bottom-24 -right-24 h-56 w-56 rounded-full bg-accent/30 blur-3xl opacity-60 group-hover:opacity-90 transition-opacity" />
@@ -96,7 +98,7 @@ export function Portfolio() {
               </p>
             </div>
             <div className="relative mt-8 inline-flex items-center gap-2 text-[14px] font-medium text-white">
-              Email me for the walkthrough
+              Message me on LinkedIn for the walkthrough
               <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </div>
           </a>

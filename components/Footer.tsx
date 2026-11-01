@@ -1,4 +1,4 @@
-import { Mail, Linkedin, MapPin } from "lucide-react";
+import { Linkedin, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -26,14 +26,6 @@ export function Footer() {
               Direct
             </h4>
             <ul className="mt-4 space-y-3 text-sm">
-              <li>
-                <a
-                  href="mailto:idris.gagan@gmail.com"
-                  className="inline-flex items-center gap-2 text-ink-100 hover:text-accent-glow transition-colors"
-                >
-                  <Mail className="h-4 w-4" /> idris.gagan@gmail.com
-                </a>
-              </li>
               <li>
                 <a
                   href="https://linkedin.com/in/idrisgagan"

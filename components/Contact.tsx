@@ -1,4 +1,4 @@
-import { Mail, Linkedin, ArrowUpRight, MapPin } from "lucide-react";
+import { Linkedin, ArrowUpRight, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -28,17 +28,10 @@ export function Contact() {
 
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="mailto:idris.gagan@gmail.com?subject=Let's%20talk"
-                  className="btn-primary"
-                >
-                  <Mail className="h-4 w-4" />
-                  idris.gagan@gmail.com
-                </a>
-                <a
                   href="https://linkedin.com/in/idrisgagan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-ghost group"
+                  className="btn-primary group"
                 >
                   <Linkedin className="h-4 w-4" />
                   LinkedIn
